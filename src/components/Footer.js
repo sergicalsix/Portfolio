@@ -5,7 +5,7 @@ import NextLink from "next/link";
 
 const Footer = () => {
     return (
-        <Box py={8} px={4} bg="gray.800" color="white" textAlign="center" position="fixed" bottom={0} width="100%">
+        <Box py={8} px={4} bg="gray.800" color="white" textAlign="center" position="fixed"  bottom={0} width="100%">
         <Flex justify="center" align="center" mb={4}>
             <NextLink href="/" passHref>
                 <Link mx={2} color="white">Top</Link>

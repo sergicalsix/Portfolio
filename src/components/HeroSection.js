@@ -16,9 +16,10 @@ const HeroSection = () => {
     {/* // maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}> */}
 
     <VStack mt={20} >
+        <Text fontWeight="bold" as='b' fontSize="3xl">My name is Yusuke Shibuya.</Text>
         <Text fontWeight="bold" as='b' fontSize="3xl">I'm data scientist and programmer.</Text>
         
-        <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={20} >
+        <Flex direction={isNotSmallerScreen ? "row" : "column"} mt={16} >
             <Link href="/skill" passHref>
               <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallerScreen ? 4 : 0}
                 bg="gray.100" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "blue.300", }}>

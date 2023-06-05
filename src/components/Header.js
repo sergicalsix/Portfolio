@@ -1,6 +1,6 @@
 // Header.js
 
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Link, Text , Image} from "@chakra-ui/react";
 import NextLink from "next/link";
 
 const Header = () => {
@@ -9,9 +9,14 @@ const Header = () => {
       <Flex justify="space-between" align="center">
         <NextLink href="/" passHref>
           <Link>
-            <Text fontSize="2xl" fontWeight="bold" color="white">Portfolio</Text>
+            <Flex>
+            <Image src="/mochi.png" alt="My Image" width="50px" height="50px" />
+            <Text fontSize="2xl" fontWeight="bold" color="white" mt={1} ml={2}>Portfolio</Text>
+            </Flex>
           </Link>
+          
         </NextLink>
+        
         <Flex>
           {/* <NextLink href="/about" passHref>
             <Link mx={2} color="black">About</Link>

@@ -1,59 +1,113 @@
 // SkillsSection.js
 
-import { Box, Grid, GridItem, Flex, Text, Progress } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Flex, Text, HStack,  Heading, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 
 const Skill = () => {
   return (
-    <Box py={16} px={8} bg="white" textAlign="center">
-      <Text fontSize="4xl" mb={8}>Skills</Text>
-      <Flex>
-      <Box flex={1} bg="gray.200" ml="10%">
-        {/* 左側のコンテンツ */}
-        ほ
-      </Box>
-      <Box flex={1} bg="gray.300" ml="2%" mr="2%">
-        {/* 中央のコンテンツ */}
-        おj
-      </Box>
-      <Box flex={1} bg="gray.400" mr="10%">
-        {/* 右側のコンテンツ */}
-        おお
-      </Box>
-    </Flex>
+    <>
+      <Text fontSize="4xl" textAlign="center" mb={16} mt={16}>Skills</Text>
+      
+    
+      <HStack spacing="3">
+        
+        <Box w="full" h="500px"  border='4px' borderColor='gray.200' p="8" ml="17%">
+          <Heading as='h4' size='md'>
+            機械学習
+          </Heading>
+          <Text mt={4} fontSize={16}>
+            アルゴリズム研究を３年間行っていました。
+            フルスクラッチでの実装や論文の再現実装を行うことができます。
+          </Text>
+          <Heading as='h5' size='sm' mt={4}>
+            # ライブラリ
+          </Heading>
+          <UnorderedList>
+            <ListItem fontSize={18}>
+              Pytorch
+            </ListItem>
+            <ListItem fontSize={18}>
+              Cupy
+            </ListItem>
+            <ListItem fontSize={18}>
+              PyTorch Geometric(PyG)
+            </ListItem>
+          </UnorderedList>
+        </Box>
 
+        <Box w="full" h="500px" border='4px' borderColor='gray.200' p="8" ml="4%" mr="4%">
+            <Heading as='h4' size='md' >
+              アプリ開発•システム開発
+            </Heading>
+            <Text mt={4} fontSize={16}>
+              個人、インターン、ハッカソンで開発を行っていました。主な技術は以下です。
+            </Text>
+            <Heading as='h5' size='sm' mt={4}>
+              # フロントエンド
+            </Heading>
+            <UnorderedList>
+              <ListItem fontSize={18}>
+                HTML•CSS
+              </ListItem>
+              <ListItem fontSize={18}>
+                React
+              </ListItem>
+              <ListItem fontSize={18}>
+                Next.js
+              </ListItem>
+              </UnorderedList>
+            <Heading as='h5' size='sm' mt={4}>
+              # バックエンド
+            </Heading>
+              <UnorderedList>
+              <ListItem fontSize={18}>
+                Django
+              </ListItem>
+              <ListItem fontSize={18}>
+                Django REST framework(DRF)
+              </ListItem>
+              <ListItem fontSize={18}>
+                Fastapi
+              </ListItem>
+            </UnorderedList>
+            <Heading as='h5' size='sm' mt={4}>
+              # その他
+            </Heading>
+              <UnorderedList>
+              <ListItem fontSize={18}>
+                streamlit
+              </ListItem>
+            </UnorderedList>
+        </Box>
+        <Box w="full" h="500px" border='4px' borderColor='gray.200' p="8" mr="17%">
+            <Heading as='h4' size='md'>
+              その他
+            </Heading>
+            <Text mt={4} fontSize={16}>
+              機械学習や開発には属さない分野で、コーディングしていたものは以下です。
+            </Text>
+            <Heading as='h5' size='sm' mt={4}>
+              # 技術
+            </Heading>
+            <UnorderedList>
+              <ListItem fontSize={18}>
+                データ解析•グラフ解析
+              </ListItem>
+              <ListItem fontSize={18}>
+                最適化(ベイズ的最適化)
+              </ListItem>
+              <ListItem fontSize={18}>
+                自動化•スクレイピング
+              </ListItem>
+              <ListItem fontSize={18}>
+                API(LINE API, Slack API, Notion API)
+              </ListItem>
+            </UnorderedList>
+        </Box>
+      </HStack>
+      
 
-      <Grid templateColumns="repeat(3, 1fr)" gap={8} mt={12}>
-        {/* Skill Card 1 */}
-        <Flex direction="column" align="center" p={4} bg="gray.100">
-          {/* Skill Icon */}
-          <Box boxSize="60px" mb={4} color="blue.500">
-            {/* Insert your skill icon here */}
-          </Box>
-          <Text fontWeight="bold" mb={2}>機械学習</Text>
-          {/* Skill Level Bar */}
-          <Progress value={90} colorScheme="blue" mb={4} />
-          {/* Skill Description */}
-          <Text fontSize="sm">データデータデータデータデータデータデータ
-          データデータデータデータデータデータデータデータデータデータデータデータデータデータデータ</Text>
-        </Flex>
-
-        {/* Skill Card 2 */}
-        <Flex direction="column" align="center" p={4} bg="gray.100">
-          {/* Skill Icon */}
-          <Box boxSize="60px" mb={4} color="blue.500">
-            {/* Insert your skill icon here */}
-          </Box>
-          <Text fontWeight="bold" mb={2}>データ解析</Text>
-          {/* Skill Level Bar */}
-          <Progress value={90} colorScheme="blue" mb={4} />
-          {/* Skill Description */}
-          <Text fontSize="sm">pandas</Text>
-        </Flex>
-        {/* Add more skill cards as needed */}
-      </Grid>
-
-
-    </Box>
+    </>
   );
 };
 
