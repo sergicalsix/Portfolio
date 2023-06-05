@@ -9,7 +9,7 @@ const Header = () => {
       <Flex justify="space-between" align="center">
         <NextLink href="/" passHref>
           <Link>
-            <Text fontSize="2xl" fontWeight="bold" color="white">My Portfolio</Text>
+            <Text fontSize="2xl" fontWeight="bold" color="white">Portfolio</Text>
           </Link>
         </NextLink>
         <Flex>

@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import ActivityChart from "../components/ActivityChart";
+import Article from "../components/Article";
 import Footer from "../components/Footer";
 
 
@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <ActivityChart  />
+      <Article />
       <Footer />
     </>
   )
