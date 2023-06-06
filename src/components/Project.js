@@ -14,8 +14,8 @@ import {
 
 const Project = () => {
   return (
-    <Box px="30%" py={12}>
-      <Text fontSize="4xl" textAlign="center" mb={8} mt={4}>Projects</Text>
+    <Box px="30%" py={8}>
+      <Text fontSize="4xl" textAlign="center" mb={8}>Projects</Text>
       <Accordion allowToggle>
         <AccordionItem py={4}>
             <h2>

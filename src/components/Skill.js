@@ -6,7 +6,7 @@ import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 const Skill = () => {
   return (
     <>
-      <Text fontSize="4xl" textAlign="center" mb={16} mt={16}>Skills</Text>
+      <Text fontSize="4xl" textAlign="center" mb={12} mt={8}>Skills</Text>
       
     
       <HStack spacing="3">
