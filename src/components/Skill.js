@@ -11,7 +11,7 @@ const Skill = () => {
     
       <HStack spacing="3">
         
-        <Box w="full" h="400px"  border='4px' borderColor='gray.200' p="4" ml="17%">
+        <Box w="full" h="450px"  border='4px' borderColor='gray.200' p="4" ml="17%">
           <Heading as='h4' size='md'>
             機械学習
           </Heading>
@@ -35,7 +35,7 @@ const Skill = () => {
           </UnorderedList>
         </Box>
 
-        <Box w="full" h="400px" border='4px' borderColor='gray.200' p="4" ml="3%" mr="3%">
+        <Box w="full" h="450px" border='4px' borderColor='gray.200' p="4" ml="3%" mr="3%">
             <Heading as='h4' size='md' >
               アプリ•システム開発
             </Heading>
@@ -76,7 +76,7 @@ const Skill = () => {
               </ListItem>
             </UnorderedList>
         </Box>
-        <Box w="full" h="400px" border='4px' borderColor='gray.200' p="4" mr="17%">
+        <Box w="full" h="450px" border='4px' borderColor='gray.200' p="4" mr="17%">
             <Heading as='h4' size='md'>
               その他
             </Heading>
