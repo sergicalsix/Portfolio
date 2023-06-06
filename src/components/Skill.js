@@ -64,7 +64,7 @@ const Skill = () => {
                 Django REST framework(DRF)
               </ListItem>
               <ListItem fontSize={18}>
-                Fastapi
+                FastAPI
               </ListItem>
             </UnorderedList>
             <Heading as='h5' size='sm' mt={4}>
