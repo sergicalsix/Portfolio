@@ -63,14 +63,14 @@ const Article = () => {
                     </Link>
                 </List>
             </Box>
-            <Box bg="gray.100" w="100%" h="200px" mt={4} _hover={{ bg: "gray.200", }}>
+            {/* <Box bg="gray.100" w="100%" h="200px" mt={4} _hover={{ bg: "gray.200", }}>
                 <Center>
                     <Text fontSize="3xl" as='b'>note</Text>
                 </Center>
                 <Center>
                 <Text as='b' fontSize="3xl" mb={2} mt={8}>Comming soon.</Text>
                 </Center>
-            </Box>
+            </Box> */}
       </Flex>
     </Box>
   );

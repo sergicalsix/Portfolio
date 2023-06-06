@@ -6,7 +6,7 @@ import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 const Skill = () => {
   return (
     <>
-      <Text fontSize="4xl" textAlign="center" mb={12} mt={8}>Skills</Text>
+      <Text fontSize="4xl" textAlign="center" mb={8} mt={8}>Skills</Text>
       
     
       <HStack spacing="3">
@@ -35,9 +35,9 @@ const Skill = () => {
           </UnorderedList>
         </Box>
 
-        <Box w="full" h="500px" border='4px' borderColor='gray.200' p="8" ml="4%" mr="4%">
+        <Box w="full" h="500px" border='4px' borderColor='gray.200' p="8" ml="3%" mr="3%">
             <Heading as='h4' size='md' >
-              アプリ開発•システム開発
+              アプリ•システム開発
             </Heading>
             <Text mt={4} fontSize={16}>
               個人、インターン、ハッカソンで開発を行っていました。主な技術は以下です。

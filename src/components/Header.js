@@ -5,7 +5,7 @@ import NextLink from "next/link";
 
 const Header = () => {
   return (
-    <Box as="header" bg="gray.800" py={4} px={8} boxShadow="sm" position="sticky" top={0} zIndex={999}>
+    <Box as="header" bg="gray.800" py="25px" px={8} boxShadow="sm" position="sticky" top={0} zIndex={999}>
       <Flex justify="space-between" align="center">
         <NextLink href="/" passHref>
           <Link>
