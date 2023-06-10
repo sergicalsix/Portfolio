@@ -1,9 +1,12 @@
 // Header.js
 
-import { Box, Flex, Link, Text , Image} from "@chakra-ui/react";
+import { Box, Flex, Link, Text , Image, useMediaQuery} from "@chakra-ui/react";
 import NextLink from "next/link";
 
 const Header = () => {
+
+  const [isMobile] = useMediaQuery('(max-width: 600px)');
+
   return (
     <Box as="header" bg="gray.800" py="5px" px={8} boxShadow="sm" position="sticky" top={0} zIndex={999}>
       <Flex justify="space-between" align="center">
@@ -17,7 +20,7 @@ const Header = () => {
           
         </NextLink>
         
-        <Flex>
+        <Flex display={isMobile ? 'none' : 'block'}>
           {/* <NextLink href="/about" passHref>
             <Link mx={2} color="black">About</Link>
           </NextLink> */}
